@@ -56,7 +56,6 @@ spec:
 
   options {
     timestamps()
-    ansiColor('xterm')
     disableConcurrentBuilds()              // avoids state lock contention if same module/env
     buildDiscarder(logRotator(numToKeepStr: '30'))
     timeout(time: 45, unit: 'MINUTES')
