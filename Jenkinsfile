@@ -10,7 +10,7 @@ spec:
   serviceAccountName: jenkins-agent
   containers:
   - name: terraform
-    image: hashicorp/terraform:1.7
+    image: hashicorp/terraform:1.14.6
     command: ['cat']
     tty: true
 """
