@@ -20,7 +20,6 @@ pipeline {
   agent {
     kubernetes {
       // Unique label per build so multiple builds don’t collide
-      label "tf-k8s-${env.BUILD_NUMBER}"
       // The default container for steps that don't specify container()
       defaultContainer 'tools'
 
